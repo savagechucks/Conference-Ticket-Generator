@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./ctg.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@87.5,700&family=Noto+Sans:wght@550&family=Roboto:wdth@75..100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Background Images -->
+    <div class="main-container">
+        <div class="f-circle"></div>
+        <div class="p-line"></div>
+        <div class="s-circle"></div>
+        <div class="squiggly-line"></div>
+        <div class="squiggly-line-bottom"></div>
+
+      <main class="main-comp">
+        <!-- First Section For The Heading -->
+        <section class="heading">
+          <div class="heading-content">
+            <div class="img">
+              <img src="./assets/images/logo-full.svg" alt="" />
+            </div>
+
+            <header class="write-up">
+              <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+
+              <p>Secure your spot at next year's biggest coding conference.</p>
+            </header>
+          </div>
+        </section>
+        <!-- First Ending -->
+
+        <!-- Second Section For Filling In The Details -->
+        <section class="details">
+          <div class="details-content">
+            <div class="upload-input">
+              <h3>Upload Avatar</h3>
+              <input type="file" id="fileInput" accept="image/*" hidden >
+              <label for="fileInput" class="upload-area">
+                <div class="upload-content">
+                  <img src="./assets/images/icon-upload.svg" alt="" />
+                  <p>Drag and drop or click to upload</p>
+                </div>
+              </label>
+            </div>
+            <div class="full-name-input">
+              <h3>Full Name</h3>
+              <input type="text" />
+            </div>
+            <div class="email-adress-input">
+              <h3>Email Address</h3>
+              <input type="text"  placeholder="example@email.com"/>
+              <!-- <label for="text" class="text-area">
+                <p>example@email.com</p>
+              </label> -->
+            </div>
+            <div class="github-username-input">
+              <h3>GitHub Username</h3>
+              <input type="text" placeholder="@yourusername"/>
+              <!-- <label for="text" class="text-area">
+                <p>@yourusername</p>
+              </label> -->
+            </div>
+
+            <button class="ticket">
+              <h3>Genetate My Ticket</h3>
+            </button>
+          </div>
+        </section>
+        <!-- Second Ending -->
+      </main>
+
+    </div>
+
+    <script src="./ctg.js"></script>
+  </body>
+</html>

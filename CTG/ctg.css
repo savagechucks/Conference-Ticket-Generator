@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 87.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.main-container {
+  border: 1px solid black;
+  height: 100%;
+  width: 70%;
+  background-image: url(./assets/images/background-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+}
+
+.f-circle {
+  position: absolute;
+  width: 220px;
+  height: 218px;
+  margin: 20px;
+  top: -75px;
+  left: 0;
+  right: -200px;
+  background-image: url(./assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 170px auto;
+}
+
+.p-line {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  background-image: url(./assets/images/pattern-lines.svg);
+}
+
+.s-circle {
+  position: absolute;
+  width: 218px;
+  height: 218px;
+  bottom: 20%;
+  left: 70%;
+  background-image: url(./assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+}
+
+.main-comp {
+    position: relative;
+    z-index: 20;
+}
+
+.squiggly-line {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  top: 30px;
+  right: -10%;
+  background-image: url(./assets/images/pattern-squiggly-line-top.svg);
+  background-repeat: no-repeat;
+  background-size: 200px auto;
+}
+
+.squiggly-line-bottom {
+  position: absolute;
+  width: 55%;
+  height: 50%;
+  top: 50%;
+  left: 0%;
+  background-image: url(./assets/images/pattern-squiggly-line-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px auto;
+}
+
+/* First Section */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heading-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.write-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.img {
+  margin-top: 10px;
+}
+
+h1 {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-left: 230px;
+  padding-right: 230px;
+}
+
+/* Second Section */
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.upload-area {
+  display: block;
+  padding: 40px 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: hsl(245, 19%, 35%);
+}
+
+input[type="text"] {
+  width: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(245, 19%, 35%);
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.full-name-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.email-adress-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.github-username-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.ticket {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: hsl(7, 88%, 67%);
+  cursor: pointer;
+}
