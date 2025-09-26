@@ -50,7 +50,7 @@ body {
 .p-line {
   position: absolute;
   width: 90%;
-  height: 70%;
+  height: 60%;
   background-image: url(./assets/images/pattern-lines.svg);
 }
 
@@ -63,11 +63,6 @@ body {
   background-image: url(./assets/images/pattern-circle.svg);
   background-repeat: no-repeat;
   background-size: 150px auto;
-}
-
-.main-comp {
-    position: relative;
-    z-index: 20;
 }
 
 .squiggly-line {
@@ -93,6 +88,14 @@ body {
   background-size: 700px auto;
 }
 
+.sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* First Section */
 .heading {
   display: flex;
@@ -100,6 +103,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  height: 50%;
 }
 
 .heading-content {
@@ -107,6 +111,7 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
 .write-up {
@@ -114,12 +119,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 30px;
+  /* transform: translateY(30px); */
 }
 
 .img {
-  transform: translateY(20px);
-  margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .conf-icon {
@@ -137,93 +142,120 @@ h1 {
   padding-right: 230px;
 }
 
-/* Second Section */
+p {
+  padding-left: 370px;
+  padding-right: 370px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(252, 6%, 83%);
+  transform: translateY(17px);
+}
+
+span {
+  color: hsl(7, 86%, 67%);
+}
 
 .details {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
-.details-content {
-  width: 100%;
+.ticket-bg {
+  width: 400px;
+  height: auto;
+  transform: translateY(80px);
+}
+
+.details .details-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
-}
-
-.upload-input {
   width: 100%;
-  max-width: 400px;
 }
 
-.info {
+.first-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: -70px;
+  transform: translateY(55px);
+}
+
+.div-text {
+  color: hsl(252, 6%, 83%);
+  font-size: 0.9rem;
+  font-weight: 900;
+  transform: translateX(28px);
+}
+
+.second-div {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  transform: translateX(-63px);
   position: relative;
-  top: 5px;
+  left: -90px;
+  transform: translateY(110px);
 }
 
-.info .info-text {
+.second-div .person {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.second-div .person-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.person-details .person-name {
+  font-size: 1.1rem;
+  /* transform: translateX(px); */
+  transform: translateY(-5px);
+  position: relative;
+  right: -10px;
+  color: hsl(0, 0%, 100%);
+}
+
+
+.person-details .person-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3px;
+  transform: translateY(-2px);
+  transform: translateX(3px);
+}
+
+.github-icon {
+  width: 17px;
+  height: auto;
+   transform: translateY(2px);
+}
+
+.person-details .person-github .username {
+  font-size: 1.2rem;
   color: hsl(252, 6%, 83%);
 }
-
-
-.upload-area {
-  display: block;
-  padding: 40px 20px;
-  border: 2px dashed #ccc;
-  border-radius: 8px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: hsl(245, 19%, 35%);
-}
-
-input[type="text"] {
-  width: 100%;
-  min-width: 300px;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: hsl(245, 19%, 35%);
-}
-
-input::placeholder {
-  color: hsl(0, 0%, 100%);
-  font-weight: 500;
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.full-name-input {
-  width: 100%;
-  max-width: 400px;
-}
-
-.email-adress-input {
-  width: 100%;
-  max-width: 400px;
-}
-
-.github-username-input {
-  width: 100%;
-  max-width: 400px;
-}
-
-.ticket {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  background-color: hsl(7, 88%, 67%);
-  cursor: pointer;
-}
-
-
