@@ -16,18 +16,22 @@
   <body>
     <!-- Background Images -->
     <div class="main-container">
-        <div class="f-circle"></div>
-        <div class="p-line"></div>
-        <div class="s-circle"></div>
-        <div class="squiggly-line"></div>
-        <div class="squiggly-line-bottom"></div>
+      <div class="f-circle"></div>
+      <div class="p-line"></div>
+      <div class="s-circle"></div>
+      <div class="squiggly-line"></div>
+      <div class="squiggly-line-bottom"></div>
 
       <main class="main-comp">
         <!-- First Section For The Heading -->
         <section class="heading">
           <div class="heading-content">
             <div class="img">
-              <img src="./assets/images/logo-full.svg" alt="" />
+              <img
+                src="./assets/images/logo-full.svg"
+                class="conf-icon"
+                alt=""
+              />
             </div>
 
             <header class="write-up">
@@ -44,13 +48,25 @@
           <div class="details-content">
             <div class="upload-input">
               <h3>Upload Avatar</h3>
-              <input type="file" id="fileInput" accept="image/*" hidden >
+              <input type="file" id="fileInput" accept="image/*" hidden />
               <label for="fileInput" class="upload-area">
                 <div class="upload-content">
                   <img src="./assets/images/icon-upload.svg" alt="" />
                   <p>Drag and drop or click to upload</p>
                 </div>
               </label>
+              <div class="info">
+                <div>
+                  <img
+                    src="./assets/images/icon-info.svg"
+                    alt=""
+                    class="info-icon"
+                  />
+                </div>
+                <div class="info-text">
+                  Upload your photo (JPG or PNG, max size: 500KB).
+                </div>
+              </div>
             </div>
             <div class="full-name-input">
               <h3>Full Name</h3>
@@ -58,17 +74,11 @@
             </div>
             <div class="email-adress-input">
               <h3>Email Address</h3>
-              <input type="text"  placeholder="example@email.com"/>
-              <!-- <label for="text" class="text-area">
-                <p>example@email.com</p>
-              </label> -->
+              <input type="text" placeholder="example@email.com" />
             </div>
             <div class="github-username-input">
               <h3>GitHub Username</h3>
-              <input type="text" placeholder="@yourusername"/>
-              <!-- <label for="text" class="text-area">
-                <p>@yourusername</p>
-              </label> -->
+              <input type="text" placeholder="@yourusername" />
             </div>
 
             <button class="ticket">
@@ -78,7 +88,6 @@
         </section>
         <!-- Second Ending -->
       </main>
-
     </div>
 
     <script src="./ctg.js"></script>
