@@ -203,6 +203,18 @@ span {
   transform: translateX(28px);
 }
 
+
+.ticket-number {
+  position: absolute;
+  right: -140px; /* Distance from right edge */
+  top: 50px;   /* Distance from top */
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: hsl(245, 15%, 58%);
+  writing-mode: vertical-rl; /* Makes text vertical */
+  text-orientation: mixed;
+}
+
 .second-div {
   width: 100%;
   display: flex;
